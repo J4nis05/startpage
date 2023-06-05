@@ -11,11 +11,11 @@ function setRandomBackground() {
     document.body.style.backgroundImage = 'url(' + imgUrl + ')';
 }
 
-// Function to convert the entered Prompt into a Google Search
+// Function to convert the entered Prompt into a duckduckgo Search
 function handleSearch(event) {
     if (event.key === 'Enter') {
         const searchQuery = event.target.value;
-        const searchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(searchQuery);
+        const searchUrl = 'https://duckduckgo.com/?q=' + encodeURIComponent(searchQuery);
         window.location.href = searchUrl;
     }
 }
