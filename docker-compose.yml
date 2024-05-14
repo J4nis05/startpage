@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  startpage:
+    image: j4nis05/startpage
+    container_name: startpage
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      - ./startpage_data:/usr/share/nginx/html
