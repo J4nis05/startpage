@@ -6,6 +6,10 @@ services:
     container_name: startpage
     restart: always
     ports:
-      - 80:80
+      - 3000:80
     volumes:
       - ./startpage_data:/usr/share/nginx/html
+      # Alternatively
+      # - ./config.json:/usr/share/nginx/html/config.json
+      # - ./icons:/usr/share/nginx/html/icons
+      # - ./backgrounds:/usr/share/nginx/html/img

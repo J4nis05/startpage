@@ -1,24 +1,31 @@
-// Function to get a random number between min (inclusive) and max (exclusive)
+// Get a random number between the Specified Values
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
-// Function to set a random background image
+
+// Set a random background image
 function setRandomBackground() {
-    var imgPath = 'img/background';
-    var randomIndex = getRandomNumber(1, 33); // Generates a random number between 1 and 33
-    var imgUrl = imgPath + randomIndex + '.jpg';
-    document.body.style.backgroundImage = 'url(' + imgUrl + ')';
+    var imgPath = 'img/background-';
+    var randomIndex = getRandomNumber(1, 265); // 265 = The Total amount of Images in the img folder
+    var paddedIndex = String(randomIndex).padStart(3, '0'); // Pad the number with 0's if it is below 100
+    var imgUrl = imgPath + paddedIndex + '.png';
+
+    document.body.style.backgroundImage = `url(${imgUrl})`;
 }
 
-// Function to convert the entered Prompt into a duckduckgo Search
+
+// Convert the entered Prompt in the Search Bar into a duckduckgo Search
 function handleSearch(event) {
     if (event.key === 'Enter') {
         const searchQuery = event.target.value;
-        window.location.href = 'https://duckduckgo.com/?q=' + encodeURIComponent(searchQuery);
+        var searchUrl = 'https://duckduckgo.com/?q=' + encodeURIComponent(searchQuery);
+        window.location.href = searchUrl;
     }
 }
 
+
+// Load the config.json File
 function loadIcons() {
     fetch('../config.json')
         .then(response => response.json())
@@ -45,9 +52,7 @@ function loadIcons() {
 
             iconsDiv.appendChild(ul);
         })
-        .catch(error => {
-            console.error('Error loading config file:', error);
-        });
+        .catch(error => { console.error('Error loading config file:', error); });
 }
 
 
