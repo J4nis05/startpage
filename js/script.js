@@ -7,7 +7,7 @@ function getRandomNumber(min, max) {
 // Set a random background image
 function setRandomBackground() {
     var imgPath = 'img/background-';
-    var randomIndex = getRandomNumber(1, 265); // 265 = The Total amount of Images in the img folder
+    var randomIndex = getRandomNumber(1, 277); // 277 = The Total amount of Images in the img folder
     var paddedIndex = String(randomIndex).padStart(3, '0'); // Pad the number with 0's if it is below 100
     var imgUrl = imgPath + paddedIndex + '.png';
 
