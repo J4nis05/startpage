@@ -1,0 +1,61 @@
+<!-- Put HTML tags here for loading JavaScript or CSS files. -->
+
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+    body { margin: 0; }
+
+    input#search:focus {
+        outline: none;
+        opacity: 100%;
+        border: 2px solid #b300f1;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-right: -10px;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #282c34;
+        filter: opacity(80%);
+        height: 120px;
+        width: 260px;
+        border-radius: 3px;
+    }
+
+    li:hover {
+        filter: opacity(92.5%);
+    }
+
+    a {
+        text-decoration: none;
+        color: #b300f1;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        height: 60px;
+        width: auto;
+        padding-top: 15px;
+    }
+
+    p {
+        margin: 0;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 3px;
+    }
+</style>
+
+<base target="_blank">

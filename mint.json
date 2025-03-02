@@ -1,0 +1,10 @@
+{
+    "name": "mintstart",
+    "application": {
+      "icon"  : "assets/icons/home.svg",
+      "head"  : "assets/head.html",
+      "title" : "Start",
+      "meta"  : { "viewport": "width=device-width, initial-scale=1, user-scalable=no", "charset": "utf-8" } 
+    },
+    "source-directories" : [ "source" ]
+  }
