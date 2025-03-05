@@ -15,7 +15,7 @@ with open("source/Paths.mint", "w") as file:
     for path in asset_paths:
         name = os.path.split(path)[1]
         name = os.path.splitext(name)[0]
-        file.write(f"        --{name}: @asset({path});\n")
+        file.write(f"        --{name}: url(@asset(..{path}));\n")
     file.write("    }\n")
     file.write("\n")
     file.write("    fun render : Html {\n")
