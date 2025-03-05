@@ -1,14 +1,9 @@
-# Use an official Nginx image as the base
-FROM nginx:alpine
+FROM ghcr.io/mint-lang/mint:latest
 
-# Set the Working Directory
-WORKDIR /usr/share/nginx/html
-
-# Copy the static files into the container
+WORKDIR /opt/mint
 COPY . .
-
-# Expose the default HTTP port (80)
-EXPOSE 80
+EXPOSE 3000
 
 # Example Command:
-# docker build -t startpage .
+# docker build -t j4nis05/startpage:mint .
+# docker push

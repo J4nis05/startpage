@@ -1,6 +1,7 @@
 component Main {
-    state wallpaper = "/assets/wallpapers/#{Wallpaper.select()}"
     style root {
+        --wp-dir: @asset(../assets/wallpapers);
+        --ic-dir: @asset(../assets/icons);
         min-height: 100vh;
         min-width: 100vw;
         margin: 0; 
@@ -8,8 +9,6 @@ component Main {
         padding: 0;
         box-sizing: border-box;
 
-        /* background-image: url(#{@asset(../assets/wallpapers/background-014.png)}); */
-        background-image: url(#{@asset(../assets/wallpapers/background-014.png)});
         background-size: cover; 
         background-repeat: no-repeat; 
         background-position-x: center;
@@ -25,7 +24,7 @@ component Main {
 
     style content {
         width: 820px;
-        margin: 0 auto;
+        margin: auto auto;
     }
 
     style search {
@@ -42,6 +41,11 @@ component Main {
     }
 
     fun render : Html {
+        let wallpaper = Wallpaper.select()
+        let path = @asset("/assets/wallpapers/#{wallpaper}")
+        Console.log("WALLPAPER: #{wallpaper}")
+        Console.log("     PATH: #{path}")
+        `document.body.style.backgroundImage = url(#{path})`
         <div::root>
             <div::content>
                 <div>

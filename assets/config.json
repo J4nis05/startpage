@@ -1,0 +1,13 @@
+{
+  "items": [
+    {"DisplayName": "Reddit",      "DisplayImage": "/assets/icons/reddit.svg",      "ItemURL": "https://reddit.com/"},
+    {"DisplayName": "Spotify",     "DisplayImage": "/assets/icons/spotify.svg",     "ItemURL": "https://spotify.com/"},
+    {"DisplayName": "GitHub",      "DisplayImage": "/assets/icons/github.svg",      "ItemURL": "https://github.com/"},
+    {"DisplayName": "Jellyfin",    "DisplayImage": "/assets/icons/jellyfin.svg",    "ItemURL": "https://jelly.j4nis05.ch/"},
+    {"DisplayName": "Nextcloud",   "DisplayImage": "/assets/icons/nextcloud.svg",   "ItemURL": "https://nas.j4nis05.ch/"},
+    {"DisplayName": "YouTube",     "DisplayImage": "/assets/icons/youtube.svg",     "ItemURL": "https://youtube.com/"},
+    {"DisplayName": "Gitea",       "DisplayImage": "/assets/icons/gitea.svg",       "ItemURL": "https://git.j4nis05.ch/"},
+    {"DisplayName": "ChatGPT",     "DisplayImage": "/assets/icons/openai.svg",      "ItemURL": "https://chat.openai.com/"},
+    {"DisplayName": "Vaultwarden", "DisplayImage": "/assets/icons/vaultwarden.svg", "ItemURL": "https://vault.j4nis05.ch/"}
+  ]
+}
