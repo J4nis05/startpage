@@ -1,4 +1,4 @@
-module Wallpaper {
+module Wallpaper {    
     fun select() : String {
         let prefix = "background-"
         let total = 277

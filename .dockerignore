@@ -36,3 +36,7 @@ docker-compose.yml
 README.md
 startpage.png
 .gitignore
+run.sh
+assets.py
+
+dist/

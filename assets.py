@@ -10,7 +10,7 @@ for dirpath, _, filenames in os.walk(wp_dir):
         asset_paths.append(f"/{dirpath}/{filename}")
 
 with open("source/Paths.mint", "w") as file:
-    file.write("module Paths {\n")
+    file.write("component Paths {\n")
     file.write("    style wallpapers {\n")
     for path in asset_paths:
         name = os.path.split(path)[1]
