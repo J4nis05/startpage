@@ -1,13 +1,13 @@
 {
   "items": [
-    {"DisplayName": "Reddit",      "DisplayImage": "icons/reddit.svg",      "ItemURL": "https://reddit.com/"},
-    {"DisplayName": "Spotify",     "DisplayImage": "icons/spotify.svg",     "ItemURL": "https://spotify.com/"},
-    {"DisplayName": "GitHub",      "DisplayImage": "icons/github.svg",      "ItemURL": "https://github.com/"},
-    {"DisplayName": "Jellyfin",    "DisplayImage": "icons/jellyfin.svg",    "ItemURL": "https://jelly.j4nis05.ch/"},
-    {"DisplayName": "Nextcloud",   "DisplayImage": "icons/nextcloud.svg",   "ItemURL": "https://nas.j4nis05.ch/"},
-    {"DisplayName": "YouTube",     "DisplayImage": "icons/youtube.svg",     "ItemURL": "https://youtube.com/"},
-    {"DisplayName": "Gitea",       "DisplayImage": "icons/gitea.svg",       "ItemURL": "https://git.j4nis05.ch/"},
-    {"DisplayName": "ChatGPT",     "DisplayImage": "icons/openai.svg",      "ItemURL": "https://chat.openai.com/"},
-    {"DisplayName": "Vaultwarden", "DisplayImage": "icons/vaultwarden.svg", "ItemURL": "https://vault.j4nis05.ch/"}
+    { "DisplayName": "Reddit"     , "DisplayImage": "icons/reddit.svg"     , "ItemURL": "https://reddit.com/"       },
+    { "DisplayName": "Spotify"    , "DisplayImage": "icons/spotify.svg"    , "ItemURL": "https://spotify.com/"      },
+    { "DisplayName": "GitHub"     , "DisplayImage": "icons/github.svg"     , "ItemURL": "https://github.com/"       },
+    { "DisplayName": "Jellyfin"   , "DisplayImage": "icons/jellyfin.svg"   , "ItemURL": "https://jelly.j4nis05.ch/" },
+    { "DisplayName": "Nextcloud"  , "DisplayImage": "icons/nextcloud.svg"  , "ItemURL": "https://nas.j4nis05.ch/"   },
+    { "DisplayName": "YouTube"    , "DisplayImage": "icons/youtube.svg"    , "ItemURL": "https://youtube.com/"      },
+    { "DisplayName": "Gitea"      , "DisplayImage": "icons/gitea.svg"      , "ItemURL": "https://git.j4nis05.ch/"   },
+    { "DisplayName": "T3 Chat"    , "DisplayImage": "icons/t3.svg"         , "ItemURL": "https://t3.chat/"          },
+    { "DisplayName": "Vaultwarden", "DisplayImage": "icons/vaultwarden.svg", "ItemURL": "https://vault.j4nis05.ch/" }
   ]
 }
